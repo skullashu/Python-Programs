@@ -95,4 +95,71 @@ b = "is Ashriti."
 a = "My name {}"
 print(a.format(b))
 
+#Declaring a list
+L1 = ["My","name","is","Ashriti"]
+print(L1)
+
+Or,
+L1 = list(("My","name","is","Ashriti"))
+print(L1)
+
+#List Length
+L1 = ["My","name","is","Ashriti"]
+print(len(L1))
+
+#Add an element at the end of the list
+L1 = ["My","name","is"]
+L1.append("Ashriti")
+print(L1)
+
+#Removes all the elements from the list
+L1 = ["My","name","is","Ashriti"]
+L1.clear()
+print(L1)
+
+#Makes a copy of the list
+L1 = ["My","name","is","Ashriti"]
+x = L1.copy()
+print(x)
+
+#Gives the number of elements with specified value
+L1 = ["My","name","is","Ashriti"]
+x = L1.count("Ashriti")
+print(x)
+
+#Adding elements of a list to the current list
+L1 = ["My","name","is"]
+L2 = ["Ashriti"]
+L1.extend(L2)
+print(L1)
+
+#Returns the index of the first element with the specified value
+L1 = ["My","name","is","Ashriti"]
+x = L1.index("Ashriti")
+print(x)
+
+#	Adds an element at the specified position
+L1 = ["My","name","is"]
+L1.insert(3,"Ashriti")
+print(L1)
+
+#Removes the element at the specified position
+L1 = ["My","name","is","Ashriti"]
+L1.pop(2)
+print(L1)
+
+#Removes the item with the specified value
+L1 = ["My","name","is","Ashriti"]
+L1.remove("Ashriti")
+print(L1)
+
+#	Reverses the order of the list
+L1 = ["My","name","is","Ashriti"]
+L1.reverse()
+print(L1)
+
+#Sorts the list
+L1 = ["My","name","is","Ashriti"]
+L1.sort()
+print(L1)
 
