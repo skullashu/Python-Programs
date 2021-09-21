@@ -57,9 +57,30 @@ print(a[-3:-9])
 a = "My name is Ashriti."
 print(a.upper())
 
+Or,
+a = "My name is Ashriti."
+b = a.capitalize()
+print(b)
+
 #Lower Case
 a = "My name is Ashriti."
 print(a.lower())
+
+Or,
+a = "My name is Ashriti."
+b = a.casefold()
+print(b)
+
+#Centered String
+a = "My name is Ashriti."
+b = a.centre(30)
+print(b)
+
+Or,
+a = "My name is Ashriti."
+b = a.centre(30,"0")
+print(b)
+
 
 #Remove Whitespace
 a = "  My name is Ashriti. "
@@ -94,6 +115,8 @@ Or,
 b = "is Ashriti."
 a = "My name {}"
 print(a.format(b))
+
+
 
 #Declaring a list
 L1 = ["My","name","is","Ashriti"]
