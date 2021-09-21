@@ -73,3 +73,26 @@ print(a.replace("Ashriti", "Ashu"))
 a = "My name is Ashriti."
 print(a.split(","))
 
+#String Concatenation
+a = "My name "
+b = "is Ashriti."
+c = a+b
+print(c)
+
+#Adding space between two strings
+a = "My name"
+b = "is Ashriti."
+c = a+" "+b
+print(c)
+
+#String Format
+b = "is Ashriti."
+a = "My name "+b
+print(a)
+
+Or,
+b = "is Ashriti."
+a = "My name {}"
+print(a.format(b))
+
+
