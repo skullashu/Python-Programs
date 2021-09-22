@@ -94,6 +94,7 @@ print(a.replace("Ashriti", "Ashu"))
 a = "My name is Ashriti."
 print(a.split(","))
 
+
 #String Concatenation
 a = "My name "
 b = "is Ashriti."
@@ -161,7 +162,7 @@ L1 = ["My","name","is","Ashriti"]
 x = L1.index("Ashriti")
 print(x)
 
-#	Adds an element at the specified position
+#Adds an element at the specified position
 L1 = ["My","name","is"]
 L1.insert(3,"Ashriti")
 print(L1)
@@ -176,7 +177,7 @@ L1 = ["My","name","is","Ashriti"]
 L1.remove("Ashriti")
 print(L1)
 
-#	Reverses the order of the list
+#Reverses the order of the list
 L1 = ["My","name","is","Ashriti"]
 L1.reverse()
 print(L1)
