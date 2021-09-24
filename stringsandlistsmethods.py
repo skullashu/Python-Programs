@@ -31,10 +31,54 @@ print(len(a))
 a = "My name is Ashriti."
 print("Ashriti" in a)
 
+#Checks if string characters is in alphanumeric
+a = "My name is Ashriti."
+b = a.isalnum()
+print(b)
+
+#Checks if string characters is in alphabets
+a = "My name is Ashriti."
+b = a.isalpha()
+print(b)
+
+#Checks if string characters has decimals
+a = "\u0030" #unicode for 0
+b = a.isdecimal()
+print(b)
+
+#Checks if string characters has digits
+a = "6754863728"
+b = a.isdigit()
+print(b)
+
+#Checks for valid identifiers
+a = "Demo"
+print(a.isidentifier())
+
+#Joining all the items in a string
+a = ["My", "name", "is", "Ashriti."]
+b = "#".join(a)
+print(b)
+
+#Maketrans Method
+a = "My name is Ashriti"
+b = a.maketrans("riti", "utos")
+print(a.translate(b))
+
+#Partition Method
+a = "My name is Ashriti"
+b = a.partition("is")
+print(b)
+
 #Using if statement
 a = "My name is Ashriti."
 if "Ashriti" in a:
   print("Yes, 'Ashriti' is present")
+
+#Finding last position of a specified character in a string
+a = "My name is Ashriti."
+b = a.rfind("Ashriti")
+print(b)
 
 #Slicing Strings
 a = "My name is Ashriti."
@@ -71,6 +115,36 @@ a = "My name is Ashriti."
 b = a.casefold()
 print(b)
 
+#Swapcase of the string
+a = "My name is Ashriti."
+b = a.swapcase()
+print(b)
+
+#To find a specific value occurs the number of times
+a = "My name is Ashriti. I, Ashriti is studying in SHUATS."
+b = a.count("Ashriti", "is")
+print(b)
+
+#Checks whether the string ends with a particular value
+a = "My name is Ashriti."
+b = a.endswith("Ashriti.")
+print(b)
+
+#Checks whether the string starts with a specific value
+a = "My name is Ashriti."
+b = a.startswith("Ashriti.")
+print(b)
+
+#Expand the string to specific whitespaces
+a = "M\ty n\ta\tm\te i\ts A\ts\th\tr\ti\tt\ti."
+b = a.expandtabs()
+print(b)
+
+#Adding zeroes at the beginning of string
+a = "My name is Ashriti."
+b = a.zfill(30)
+print(b)
+
 #Centered String
 a = "My name is Ashriti."
 b = a.centre(30)
@@ -94,6 +168,34 @@ print(a.replace("Ashriti", "Ashu"))
 a = "My name is Ashriti."
 print(a.split(","))
 
+#String to list
+a = "My name is Ashriti."
+print(a.rsplit(","))
+
+#Splitting a string into list where there is a line break
+a = "My name is Ashriti.\nI am 22 yrs old."
+b = a.splitlines()
+print(b)
+
+#Returns left justified version of the string
+a = "My name is Ashriti."
+b = a.ljust(30, "O")
+print(b)
+
+#Returns right justified version of the string
+a = "My name is Ashriti."
+b = a.rjust(30, "O")
+print(b)
+
+#Removes left characters of a string
+a = ",,..,.,.,.00000My name is Ashriti."
+b = a.lstrip(",.0")
+print(b)
+
+#Removes trailing characters of a string
+a = "My name is Ashriti.,.,.,.,.,.,000000"
+b = a.rstrip(",.0")
+print(b)
 
 #String Concatenation
 a = "My name "
